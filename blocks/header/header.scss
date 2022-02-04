@@ -1,0 +1,109 @@
+.header {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: #000000;
+
+  &__column {
+    padding: 0 160px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 890px) {
+      padding: 0 50px 0 50px;
+    }
+
+    @media screen and (max-width: 440px) {
+      padding: 0 20px 0 20px;
+    }
+  }
+
+  &__logo {
+    padding: 26px 0 0 0;
+    width: 38px;
+    height: 54px;
+
+    @media screen and (max-width: 440px) {
+      padding: 16px 0 0 0;
+      width: 26px;
+      height: 36px;
+    }
+  }
+
+  &__container {
+    padding: 30px 0 0 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 19px 0 0 0;
+    }
+  }
+
+  &__link {
+    font-family: 'Noto Sans';
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: normal;
+
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+      line-height: 16px;
+    }
+
+    @media screen and (max-width: 610px) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  &__image {
+
+    @media screen and (max-width: 610px) {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  &__button {
+    margin: 0 0 0 50px;
+    background-color: #009465;
+    width: 218px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px 14px 28px;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      margin: 0 0 0 30px;
+      padding: 12px 22px 12px 22px;
+      width: 184px;
+    }
+
+    @media screen and (max-width: 440px) {
+      padding: 6px 16px 6px 16px;
+      margin: 0;
+      width: 140px;
+    }
+
+    &:hover {
+      background-color: #066C4C;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    color: #FFFFFF;
+    font-family: 'NotoSans';
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+}
