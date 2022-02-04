@@ -1,0 +1,36 @@
+@font-face {
+  src:
+  url('../fonts/NotoSans.woff2') format('woff2'),
+  url('../fonts/NotoSans.woff') format('woff');
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src:
+  url('../fonts/NotoSans-Italic.woff2') format('woff2'),
+  url('../fonts/NotoSans-Italic.woff') format('woff');
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 600;
+}
+
+/*@font-face {*/
+/*  src:*/
+/*  url('../fonts/NotoSans-BoldItalic.woff2') format('woff2'),*/
+/*  url('../fonts/NotoSans-BoldItalic.woff') format('woff');*/
+/*  font-family: 'Noto Sans';*/
+/*  font-style: normal;*/
+/*  font-weight: 600;*/
+/*}*/
+
+@font-face {
+  src:
+  url('../fonts/NotoSans-Bold.woff2') format('woff2'),
+  url('../fonts/NotoSans-Bold.woff') format('woff');
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+}
+
