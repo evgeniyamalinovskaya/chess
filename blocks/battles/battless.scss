@@ -3,9 +3,21 @@
   margin: 0 auto;
   padding: 0;
   background-color: #000000;
+  background-image: url(../../images/battles.svg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+
+  @media screen and (max-width: 1100px) {
+   background-image: url(../../images/batl.svg);
+  }
+
+  @media screen and (max-width: 740px) {
+    background-image: none;
+  }
 
   &__content {
     padding: 80px 160px 80px 160px;
+
 
     @media screen and (max-width: 768px) {
       padding: 50px 50px 80px 50px;
@@ -47,12 +59,21 @@
     }
   }
 
+  &__scroll-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
   &__game {
+    margin: 0;
     padding: 110px 0 0 0;
+    list-style: none;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    box-sizing: content-box;
     display: flex;
+    flex-direction: row;
     gap: 80px;
-    width: 320px;
-    height: 320px;
 
     @media screen and (max-width: 768px) {
       padding: 140px 0 0 0;
@@ -61,45 +82,34 @@
 
     @media screen and (max-width: 420px) {
       padding: 60px 0 0 0;
-      width: 280px;
-      height: 280px;
     }
   }
+  &__game::-webkit-scrollbar {
+    width: 0;
+  }
 
-  &__main {
-    background-image: url(../../images/battles.svg);
-    background-repeat: no-repeat;
-    background-position: 0;
-    background-position-y: 5px;
-
-    @media screen and (max-width: 1230px) {
-      background-position: calc(100% - 560px);
-    }
-
-    @media screen and (max-width: 1100px) {
-      background-position: 0;
-      background-image: url(../../images/batl.svg);
-    }
-
-    @media screen and (max-width: 700px) {
-      background-image: none;
-    }
+  &__game-item {
+    margin: 0;
+    position: relative;
   }
 
   &__main-illustration {
     margin: 0;
-    padding: 110px 160px 0 60%;
+    padding: 110px 0 0 63%;
+    width: 100%;
     max-width: 416px;
     max-height: 104px;
 
-    @media screen and (max-width: 768px) {
-      padding: 140px 0 0 0;
+    @media screen and (max-width: 1100px) {
+      padding: 110px 0 0 38%;
+    }
+
+    @media screen and (max-width: 740px) {
+      padding: 110px 0 0 0;
     }
 
     @media screen and (max-width: 420px) {
       padding: 98px 0 0 0;
-      max-width: 280px;
-      max-height: 70px;
      }
   }
 }

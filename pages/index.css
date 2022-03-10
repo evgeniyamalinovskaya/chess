@@ -2,12 +2,9 @@
 @import '../vendor/normalize.css';
 .page {
   max-width: 1440px;
-  background-color: #000000;
-  display: flex;
-  flex-direction: column;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
-  position: relative;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -227,6 +224,7 @@
   }
 }
 .correct-chess__image {
+  width: 100%;
   max-width: 416px;
   max-height: 104px;
   padding: 182px 0 80px 0;
@@ -259,7 +257,7 @@
     padding: 50px 50px 50px 50px;
   }
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 420px) {
   .team__content {
     padding: 20px 20px 78px 20px;
   }
@@ -296,9 +294,17 @@
     padding-top: 20px;
   }
 }
+.team__scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
 .team__container {
+  margin: 0;
   padding: 110px 0 0 0;
+  list-style: none;
+  overflow-x: scroll;
   display: flex;
+  flex-direction: row;
   gap: 80px;
 }
 @media screen and (max-width: 768px) {
@@ -311,6 +317,13 @@
   .team__container {
     padding: 60px 0 0 0;
   }
+}
+.team__container::-webkit-scrollbar {
+  width: 0;
+}
+.team__item {
+  margin: 0;
+  position: relative;
 }
 .team__item-image {
   width: 320px;
@@ -358,43 +371,42 @@
     text-align: center;
   }
 }
+@media screen and (max-width: 320px) {
+  .team .swiper-pagination {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #FFFFFF;
+  }
+}
 
 .contact {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: #5036E6;
   color: #FFFFFF;
-  position: relative;
-}
-.contact::before {
-  margin: 0;
-  padding: 0;
-  content: "";
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 660px;
-  height: 440px;
   background-image: url("../../images/contacn-team.png");
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1230px) {
-  .contact::before {
-    background-position: calc(100% - 220px);
+  .contact {
+    background-position: calc(100% - 585px);
   }
 }
 @media screen and (max-width: 900px) {
-  .contact::before {
+  .contact {
     background-position: 0;
     background-position-y: 5px;
     background-image: url("../../images/contact team 2.svg");
   }
 }
 @media screen and (max-width: 650px) {
-  .contact::before {
+  .contact {
     background-image: url("../../images/contact team 3.svg");
-    background-position: 50%;
+    background-position-y: bottom;
   }
 }
 .contact__content {
@@ -415,13 +427,12 @@
   margin: 0;
   padding: 0 0 0 50px;
   max-width: 520px;
-  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   z-index: 1;
 }
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1160px) {
   .contact__info {
     padding: 0;
   }
@@ -429,6 +440,7 @@
 @media screen and (max-width: 650px) {
   .contact__info {
     max-width: 280px;
+    padding: 0 0 100px 0;
   }
 }
 .contact__title {
@@ -468,6 +480,19 @@
   margin: 0 auto;
   padding: 0;
   background-color: #000000;
+  background-image: url(../../images/battles.svg);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+}
+@media screen and (max-width: 1100px) {
+  .battles {
+    background-image: url(../../images/batl.svg);
+  }
+}
+@media screen and (max-width: 740px) {
+  .battles {
+    background-image: none;
+  }
 }
 .battles__content {
   padding: 80px 160px 80px 160px;
@@ -514,12 +539,20 @@
     line-height: 16px;
   }
 }
+.battles__scroll-wrapper {
+  position: relative;
+  width: 100%;
+}
 .battles__game {
+  margin: 0;
   padding: 110px 0 0 0;
+  list-style: none;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  box-sizing: content-box;
   display: flex;
+  flex-direction: row;
   gap: 80px;
-  width: 320px;
-  height: 320px;
 }
 @media screen and (max-width: 768px) {
   .battles__game {
@@ -530,48 +563,35 @@
 @media screen and (max-width: 420px) {
   .battles__game {
     padding: 60px 0 0 0;
-    width: 280px;
-    height: 280px;
   }
 }
-.battles__main {
-  background-image: url(../../images/battles.svg);
-  background-repeat: no-repeat;
-  background-position: 0;
-  background-position-y: 5px;
+.battles__game::-webkit-scrollbar {
+  width: 0;
 }
-@media screen and (max-width: 1230px) {
-  .battles__main {
-    background-position: calc(100% - 560px);
-  }
-}
-@media screen and (max-width: 1100px) {
-  .battles__main {
-    background-position: 0;
-    background-image: url(../../images/batl.svg);
-  }
-}
-@media screen and (max-width: 700px) {
-  .battles__main {
-    background-image: none;
-  }
+.battles__game-item {
+  margin: 0;
+  position: relative;
 }
 .battles__main-illustration {
   margin: 0;
-  padding: 110px 160px 0 60%;
+  padding: 110px 0 0 63%;
+  width: 100%;
   max-width: 416px;
   max-height: 104px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .battles__main-illustration {
-    padding: 140px 0 0 0;
+    padding: 110px 0 0 38%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .battles__main-illustration {
+    padding: 110px 0 0 0;
   }
 }
 @media screen and (max-width: 420px) {
   .battles__main-illustration {
     padding: 98px 0 0 0;
-    max-width: 280px;
-    max-height: 70px;
   }
 }
 
@@ -649,7 +669,7 @@
     line-height: 16px;
   }
 }
-.footer__copycenter {
+.footer__copycentre {
   padding: 20px 0 80px 0;
   margin: 0;
   color: #8E9199;
@@ -659,11 +679,159 @@
   line-height: 20px;
 }
 @media screen and (max-width: 420px) {
-  .footer__copycenter {
+  .footer__copycentre {
     font-size: 12px;
     line-height: 12px;
     padding: 10px 0 40px 0;
   }
+}
+
+.popup {
+  margin: 0 auto;
+  padding: 0;
+  position: fixed;
+  max-width: 1440px;
+  max-height: 870px;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  z-index: 2;
+  display: none;
+}
+.popup_opened {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+  transition: display 0s 0s, visibility 0s 0s, opacity 0.3s linear;
+}
+.popup__container {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+}
+.popup__logo {
+  padding: 120px 0 0 0;
+  width: 38px;
+  height: 54px;
+}
+@media screen and (max-width: 768px) {
+  .popup__logo {
+    padding: 200px 0 0 0;
+  }
+}
+@media screen and (max-width: 440px) {
+  .popup__logo {
+    padding: 120px 0 0 0;
+  }
+}
+.popup__form {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup__title {
+  margin: 0;
+  padding: 50px 0 78px 0;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 31px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .popup__title {
+    padding: 40px 0 40px 0;
+    font-size: 30px;
+    line-height: 27px;
+  }
+}
+.popup__item-container {
+  margin: 0 auto;
+  padding: 0 60px 0 60px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+@media (max-width: 767px) {
+  .popup__item-container {
+    padding: 0 22px 0 22px;
+  }
+}
+.popup__item {
+  margin: 20px 0 0 0;
+  padding: 12px 0 12px 18px;
+  width: 500px;
+  height: 48px;
+  border: none;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #1A1A1A;
+  font-family: Noto Sans;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+@media (max-width: 540px) {
+  .popup__item {
+    margin: 10px 0 0 0;
+    font-size: 12px;
+    width: 280px;
+    height: 42px;
+  }
+}
+.popup__item:focus {
+  border: 1px solid #5036E6;
+}
+.popup__item:hover {
+  background-color: rgba(26, 26, 26, 0.6);
+}
+.popup__item:first-child {
+  margin: 0;
+}
+.popup__submit {
+  margin: 253px 200px 120px 200px;
+  padding: 14px 28px 14px 28px;
+  background-color: #009465;
+  width: 218px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "NotoSans";
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .popup__submit {
+    margin: 243px 200px 120px 200px;
+  }
+}
+@media (max-width: 540px) {
+  .popup__submit {
+    margin: 143px 90px 120px 90px;
+    padding: 6px 16px 6px 16px;
+    max-width: 140px;
+    font-size: 10px;
+  }
+}
+.popup__submit:hover {
+  background: #066C4C;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=index.css.map */

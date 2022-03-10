@@ -1,43 +1,28 @@
 .contact {
   max-width: 1440px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   background-color: #5036E6;
   color: #FFFFFF;
-  position: relative;
-
-  &::before {
-    margin: 0;
-    padding: 0;
-    content: '';
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 660px;
-    height: 440px;
-    background-image: url('../../images/contacn-team.png');
-    background-repeat: no-repeat;
+  background-image: url('../../images/contacn-team.png');
+  background-repeat: no-repeat;
 
     @media screen and (max-width: 1230px) {
-     background-position: calc(100% - 220px);
+     background-position: calc(100% - 585px);
     }
 
       @media screen and (max-width: 900px) {
       background-position: 0;
       background-position-y: 5px;
       background-image: url('../../images/contact team 2.svg');
-
     }
 
     @media screen and (max-width: 650px) {
       background-image: url('../../images/contact team 3.svg');
-      background-position: calc(100% - 50%);
-      //max-width: 320px;
-      //max-height: 344px;
-      //display: flex;
-      //flex-direction: column;
-    }
-  }
+      background-position-y: bottom;
+      }
+
 
   &__content {
     margin: 0;
@@ -57,51 +42,50 @@
       margin: 0;
       padding: 0 0 0 50px;
       max-width: 520px;
-      position: relative;
       display: flex;
       justify-content: center;
       flex-direction: column;
       z-index: 1;
 
-      @media screen and (max-width: 1230px) {
+      @media screen and (max-width: 1160px) {
         padding: 0;
       }
 
       @media screen and (max-width: 650px) {
         max-width: 280px;
+        padding: 0 0 100px 0;
       }
-
     }
 
-  &__title {
-    max-width: 520px;
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans';
-    font-weight: 500;
-    font-size: 70px;
-    line-height: 63px;
+    &__title {
+      max-width: 520px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans';
+      font-weight: 500;
+      font-size: 70px;
+      line-height: 63px;
 
       @media screen and (max-width: 650px) {
-      font-size: 40px;
-      line-height: 36px;
-
+        font-size: 40px;
+        line-height: 36px;
+      }
     }
 
-  }
-  &__text {
-    margin: 40px 0 0 0;
-    padding: 0;
-    max-width: 520px;
-    font-family: 'Noto Sans';
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
+    &__text {
+      margin: 40px 0 0 0;
+      padding: 0;
+      max-width: 520px;
+      font-family: 'Noto Sans';
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 26px;
 
-    @media screen and (max-width: 650px) {
-      margin: 20px 0 0 0;
-      font-size: 12px;
-      line-height: 16px;
+      @media screen and (max-width: 650px) {
+        margin: 20px 0 0 0;
+        font-size: 12px;
+        line-height: 16px;
+      }
     }
-  }
 }
+

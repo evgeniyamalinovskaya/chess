@@ -11,7 +11,7 @@
     @media screen and (max-width: 890px) {
       padding: 50px 50px 50px 50px;
     }
-    @media screen and (max-width: 610px) {
+    @media screen and (max-width: 420px) {
       padding: 20px 20px 78px 20px;
     }
   }
@@ -46,9 +46,19 @@
       padding-top: 20px;
     }
   }
+
+  &__scroll-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
   &__container {
+    margin: 0;
     padding: 110px 0 0 0;
+    list-style: none;
+    overflow-x: scroll;
     display: flex;
+    flex-direction: row;
     gap: 80px;
 
     @media screen and (max-width: 768px) {
@@ -59,6 +69,13 @@
     @media screen and (max-width: 420px) {
       padding: 60px 0 0 0;
     }
+  }
+  &__container::-webkit-scrollbar {
+    width: 0;
+  }
+  &__item {
+    margin: 0;
+    position: relative;
   }
 
   &__item-image {
@@ -105,4 +122,18 @@
       text-align: center;
     }
   }
+  .swiper-pagination {
+
+    @media screen and (max-width: 320px) {
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      background-color: #FFFFFF;
+
+    }
+  }
+
 }
+
+
