@@ -3,7 +3,7 @@
   margin: 0 auto;
   padding: 60px 0 0 0;
   background-color: #000000;
-  background-image: url('../../images/image.png');
+  background-image: url('../images/image.png');
   background-repeat: no-repeat;
   background-position: calc(100% + 160px);
 
@@ -18,7 +18,7 @@
   @media screen and (max-width: 440px) {
     padding: 50px 0 0 0;
     background-size: 120px;
-    background-image: url('../../images/image 2.svg');
+    background-image: url('../images/image 2.svg');
     background-position-x: calc(100% - 20px);
     background-position-y: 43px;
   }
@@ -58,15 +58,11 @@
 
   }
   &__title {
+    @include font-size-title;
     max-width: 500px;
     margin: 0;
     padding: 70px 0 0 0;
-    color: #FFFFFF;
-    font-family: 'Noto Sans';
     font-weight: 700;
-    font-size: 70px;
-    line-height: 63px;
-
 
     @media screen and (max-width: 650px) {
       padding-top: 60px;
@@ -76,14 +72,9 @@
     }
   }
   &__text {
+    @include font-size-text;
     margin: 0;
     max-width: 500px;
-    color: #FFFFFF;
-    padding: 40px 0 0 0;
-    font-family: 'Noto Sans';
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
 
     @media screen and (max-width: 650px) {
       max-width: 280px;

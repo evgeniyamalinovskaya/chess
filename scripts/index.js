@@ -48,8 +48,8 @@ function sendFormRegistration(evt) {
     console.log(nameInput.value)
     console.log(emailInput.value)
 
-    //submitButton.textContent = 'Выйти';
-    //submitButton.style.width = '108px';
+    submitButton.textContent = 'Выйти';
+    submitButton.style.width = '108px';
     evt.stopPropagation();
 }
 
