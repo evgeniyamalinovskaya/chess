@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Правильные шахматы</title>
+    <link rel="stylesheet" href="./pages/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+
+<body>
+<div class="page">
+<header class="header">
+        <div class="header__column">
+            <img class="header__logo" src="images/logo.svg" alt="Пешка">
+            <div class="header__container">
+                <a href="" class="header__link">Вступайте в клуб</a>
+                <img class="header__image" src="images/strelka.png" alt="Стрелка">
+                <button class="header__button" type="button">
+                    <p class="header__text">Зарегистрироваться</p>
+                </button>
+            </div>
+        </div>
+    </header>
+
+<main>
+    <section class="correct-chess">
+        <div class="correct-chess__content">
+            <div class="correct-chess__club">Клуб</div>
+                <h1 class="correct-chess__title">Правильные шахматы</h1>
+                <p class="correct-chess__text">Приходите к нам, играть в шахматы! Сразитесь в классическом поединке, блиц состязании и бою с гройсмейстером. </p>
+                <img class="correct-chess__image" src="images/blue%20table.png" alt="Голубая шахматная доска">
+        </div>
+    </section>
+
+    <section class="team">
+        <div class="team__content">
+            <h2 class="team__title">Наша команда</h2>
+            <p class="team__text">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!</p>
+            <div class="team__scroll-wrapper">
+            <ul class="team__container">
+                <li class="team__item">
+                    <img class="team__item-image" src="images/Andi.png" alt="Фото Андрей шахматист">
+                    <p class="team__item-name">Андрей</p>
+                    <p class="team__item-info">Шахматист, писатель.</p>
+                </li>
+                <li class="team__item">
+                    <img class="team__item-image" src="images/Hik.png" alt="Фото Никита шахматист">
+                    <p class="team__item-name">Никита</p>
+                    <p class="team__item-info">Шахматист, кулинар.</p>
+                </li>
+                <li class="team__item">
+                    <img class="team__item-image" src="images/Aleks.png" alt="Фото Алексей шахматист">
+                    <p class="team__item-name">Алексей</p>
+                    <p class="team__item-info">Шахматист, геймер.</p>
+                </li>
+            </ul>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact__content">
+            <div class="contact__info">
+                <h2 class="contact__title">Хочешь в команду?</h2>
+                <p class="contact__text">Свяжись с нами и мы обсудим все детали присоединения к команде.</p>
+            </div>
+        </div>
+    </section>
+    <section class="battles">
+        <div class="battles__content">
+            <h2 class="battles__title">Сражения</h2>
+            <p class="battles__text">Сражайтесь в парах и приятно проводите время. Если хотите прокачать свои навыки — сыграйте с нашими шахматистами.</p>
+            <div class="battles__scroll-wrapper">
+            <ul class="battles__game">
+                <li class="battles__game-item">
+                <img class="battles__image" src="images/play.png" alt="Партия в шахматы">
+                </li>
+                <li class="battles__game-item">
+                <img class="battles__image" src="images/time.png" alt="Шахматная партия">
+                </li>
+                <li class="battles__game-item">
+                <img class="battles__image" src="images/time%20play.png" alt="Время пошло шахматной партии">
+                </li>
+            </ul>
+        </div>
+            <img class="battles__main-illustration" src="images/green%20table.png" alt="Зеленая шахматная доска">
+        </div>
+    </section>
+</main>
+<footer class="footer">
+          <div class="footer__container">
+            <img class="footer__logo" src="images/logo.svg" alt="Пешка">
+            <button class="footer__button" type="button">
+                <p class="footer__text">Зарегистрироваться</p>
+            </button>
+            <p class="footer__chess-info">Шахматный клуб в Москве.</p>
+            <p class="footer__copycentre">© Chess Club.</p>
+        </div>
+</footer>
+</div>
+<div class="popup">
+    <div class="popup__container">
+        <img class="popup__logo" src="images/logo.svg" alt="Пешка">
+        <div class="popup__form">
+            <h2 class="popup__title">Регистрация</h2>
+            <form name="form-info">
+                <fieldset class="popup__item-container">
+                    <input class="popup__item" type="text" name="name" id="name" placeholder="Имя" required>
+                    <input class="popup__item" type="email" name="email" id="email" placeholder="Email" required>
+                </fieldset>
+                <button class="popup__submit" type="submit">Зарегистрироваться</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/index.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>
