@@ -127,7 +127,7 @@
   margin: 0 auto;
   padding: 60px 0 0 0;
   background-color: #000000;
-  background-image: url("../../images/image.png");
+  background-image: url("../images/image.png");
   background-repeat: no-repeat;
   background-position: calc(100% + 160px);
 }
@@ -145,7 +145,7 @@
   .correct-chess {
     padding: 50px 0 0 0;
     background-size: 120px;
-    background-image: url("../../images/image 2.svg");
+    background-image: url("../images/image 2.svg");
     background-position-x: calc(100% - 20px);
     background-position-y: 43px;
   }
@@ -187,14 +187,14 @@
   }
 }
 .correct-chess__title {
+  color: #FFFFFF;
+  font-family: "Noto Sans";
+  font-size: 70px;
+  line-height: 63px;
   max-width: 500px;
   margin: 0;
   padding: 70px 0 0 0;
-  color: #FFFFFF;
-  font-family: "Noto Sans";
   font-weight: 700;
-  font-size: 70px;
-  line-height: 63px;
 }
 @media screen and (max-width: 650px) {
   .correct-chess__title {
@@ -205,14 +205,13 @@
   }
 }
 .correct-chess__text {
-  margin: 0;
-  max-width: 500px;
   color: #FFFFFF;
-  padding: 40px 0 0 0;
   font-family: "Noto Sans";
-  font-weight: normal;
+  padding-top: 40px;
   font-size: 20px;
   line-height: 26px;
+  margin: 0;
+  max-width: 500px;
 }
 @media screen and (max-width: 650px) {
   .correct-chess__text {
@@ -263,12 +262,12 @@
   }
 }
 .team__title {
-  margin: 0;
-  padding: 0;
   color: #FFFFFF;
   font-family: "Noto Sans";
   font-size: 70px;
   line-height: 63px;
+  margin: 0;
+  padding: 0;
   font-weight: 700;
 }
 @media screen and (max-width: 420px) {
@@ -278,13 +277,13 @@
   }
 }
 .team__text {
-  max-width: 500px;
-  margin: 0;
   color: #FFFFFF;
   font-family: "Noto Sans";
   padding-top: 40px;
   font-size: 20px;
   line-height: 26px;
+  max-width: 500px;
+  margin: 0;
 }
 @media screen and (max-width: 420px) {
   .team__text {
@@ -371,15 +370,6 @@
     text-align: center;
   }
 }
-@media screen and (max-width: 320px) {
-  .team .swiper-pagination {
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 14px;
-    background-color: #FFFFFF;
-  }
-}
 
 .contact {
   max-width: 1440px;
@@ -388,7 +378,7 @@
   padding: 0;
   background-color: #5036E6;
   color: #FFFFFF;
-  background-image: url("../../images/contacn-team.png");
+  background-image: url("../images/contacn-team.png");
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 1230px) {
@@ -400,12 +390,12 @@
   .contact {
     background-position: 0;
     background-position-y: 5px;
-    background-image: url("../../images/contact team 2.svg");
+    background-image: url("../images/contact team 2.svg");
   }
 }
 @media screen and (max-width: 650px) {
   .contact {
-    background-image: url("../../images/contact team 3.svg");
+    background-image: url("../images/contact team 3.svg");
     background-position-y: bottom;
   }
 }
@@ -444,13 +434,14 @@
   }
 }
 .contact__title {
+  color: #FFFFFF;
+  font-family: "Noto Sans";
+  font-size: 70px;
+  line-height: 63px;
   max-width: 520px;
   margin: 0;
   padding: 0;
-  font-family: "Noto Sans";
   font-weight: 500;
-  font-size: 70px;
-  line-height: 63px;
 }
 @media screen and (max-width: 650px) {
   .contact__title {
@@ -459,13 +450,13 @@
   }
 }
 .contact__text {
-  margin: 40px 0 0 0;
-  padding: 0;
-  max-width: 520px;
+  color: #FFFFFF;
   font-family: "Noto Sans";
-  font-weight: normal;
+  padding-top: 40px;
   font-size: 20px;
   line-height: 26px;
+  margin: 0;
+  max-width: 520px;
 }
 @media screen and (max-width: 650px) {
   .contact__text {
@@ -480,13 +471,13 @@
   margin: 0 auto;
   padding: 0;
   background-color: #000000;
-  background-image: url(../../images/battles.svg);
+  background-image: url(../images/battles.svg);
   background-repeat: no-repeat;
   background-position-y: bottom;
 }
 @media screen and (max-width: 1100px) {
   .battles {
-    background-image: url(../../images/batl.svg);
+    background-image: url(../images/batl.svg);
   }
 }
 @media screen and (max-width: 740px) {
@@ -508,13 +499,13 @@
   }
 }
 .battles__title {
-  margin: 0;
-  padding: 0 0 40px 0;
   color: #FFFFFF;
   font-family: "Noto Sans";
-  font-weight: 500;
   font-size: 70px;
   line-height: 63px;
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
 }
 @media screen and (max-width: 420px) {
   .battles__title {
@@ -524,13 +515,13 @@
   }
 }
 .battles__text {
-  margin: 0;
-  max-width: 500px;
   color: #FFFFFF;
   font-family: "Noto Sans";
-  font-weight: normal;
+  padding-top: 40px;
   font-size: 20px;
   line-height: 26px;
+  margin: 0;
+  max-width: 500px;
 }
 @media screen and (max-width: 420px) {
   .battles__text {
@@ -571,6 +562,10 @@
 .battles__game-item {
   margin: 0;
   position: relative;
+}
+.battles__image {
+  width: 280px;
+  height: 280px;
 }
 .battles__main-illustration {
   margin: 0;

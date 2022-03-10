@@ -3,12 +3,12 @@
   margin: 0 auto;
   padding: 0;
   background-color: #000000;
-  background-image: url(../../images/battles.svg);
+  background-image: url(../images/battles.svg);
   background-repeat: no-repeat;
   background-position-y: bottom;
 
   @media screen and (max-width: 1100px) {
-   background-image: url(../../images/batl.svg);
+   background-image: url(../images/batl.svg);
   }
 
   @media screen and (max-width: 740px) {
@@ -28,13 +28,10 @@
     }
   }
   &__title {
+    @include font-size-title;
     margin: 0;
-    padding: 0 0 40px 0;
-    color: #FFFFFF;
-    font-family: 'Noto Sans';
+    padding: 0;
     font-weight: 500;
-    font-size: 70px;
-    line-height: 63px;
 
     @media screen and (max-width: 420px) {
       padding: 0 0 20px 0;
@@ -44,13 +41,10 @@
   }
 
   &__text {
+    @include font-size-text;
     margin: 0;
     max-width: 500px;
-    color: #FFFFFF;
-    font-family: 'Noto Sans';
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
+
 
     @media screen and (max-width: 420px) {
       max-width: 280px;
@@ -93,6 +87,10 @@
     position: relative;
   }
 
+  &__image {
+    width: 280px;
+    height: 280px;
+  }
   &__main-illustration {
     margin: 0;
     padding: 110px 0 0 63%;
